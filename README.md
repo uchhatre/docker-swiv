@@ -1,7 +1,7 @@
 # docker-swiv
 Docker repo for Yahoo Swiv that used to be Imply Pivot before they closed sourced it.
 
-Here are 3 typical usages --
+Here are typical usages --
 
 1) Supply your druid broker host and broker port
 
@@ -10,7 +10,7 @@ docker run -d -e "DRUID_BROKER_HOST=192.168.1.156" -e "DRUID_BROKER_PORT=8082" -
 ```
 
 
-2) If you supply only druid host, the container will attemp port 8082 for druid broker
+2) If you supply only druid host, the container will attempted port 8082 for druid broker
 
 ```
 docker run -d -e "DRUID_BROKER_HOST=192.168.1.156"  -p 9090:9090 uchhatre/druid-pivot-swiv:latest
