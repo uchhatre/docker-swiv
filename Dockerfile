@@ -8,7 +8,4 @@ COPY getready.sh /
 RUN /getready.sh
 COPY run.sh /
 RUN chmod +x /run.sh
-#RUN apt-get install -y --no-install-recommends \
-#   ls \
-#    pwd
 CMD ["/run.sh"]
